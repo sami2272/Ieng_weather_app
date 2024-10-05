@@ -11,28 +11,28 @@ import com.smart.weatherapp.model.Winddata
 
 class Converters {
 
-    // Convert from ArrayList<ForecastItem> to String (for saving in the database)
+
     @TypeConverter
     fun fromForecastList(value: ArrayList<ForecastItem>?): String {
         val gson = Gson()
         return gson.toJson(value)
     }
 
-    // Convert from String to ArrayList<ForecastItem> (for reading from the database)
+
     @TypeConverter
     fun toForecastList(value: String): ArrayList<ForecastItem> {
         val listType = object : TypeToken<ArrayList<ForecastItem>>() {}.type
         return Gson().fromJson(value, listType)
     }
 
-    // Convert from ArrayList<ForecastItem> to String (for saving in the database)
+
     @TypeConverter
     fun fromWeatherConditionList(value: ArrayList<WeatherCondition>?): String {
         val gson = Gson()
         return gson.toJson(value)
     }
 
-    // Convert from String to ArrayList<ForecastItem> (for reading from the database)
+
     @TypeConverter
     fun toWeatherConditionList(value: String): ArrayList<WeatherCondition> {
         val listType = object : TypeToken<ArrayList<WeatherCondition>>() {}.type
@@ -45,7 +45,7 @@ class Converters {
         return Gson().toJson(city)
     }
 
-    // Convert JSON String back to City object
+
     @TypeConverter
     fun toCity(cityString: String): City {
         return Gson().fromJson(cityString, City::class.java)
@@ -56,7 +56,7 @@ class Converters {
         return Gson().toJson(city)
     }
 
-    // Convert JSON String back to City object
+
     @TypeConverter
     fun toMainWeatherCity(cityString: String): MainWeather {
         return Gson().fromJson(cityString, MainWeather::class.java)
@@ -67,7 +67,6 @@ class Converters {
         return Gson().toJson(city)
     }
 
-    // Convert JSON String back to City object
     @TypeConverter
     fun toWinddata(cityString: String): Winddata {
         return Gson().fromJson(cityString, Winddata::class.java)
