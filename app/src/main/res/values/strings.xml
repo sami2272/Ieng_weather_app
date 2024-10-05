@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cities">Cities</string>
+    <string name="islamabad">Islamabad</string>
+    <string name="choose_city">Choose City</string>
+    <string name="no_location_found">No Location Found</string>
+    <string name="baseurl">http://api.openweathermap.org/geo/1.0/</string>
+    <string name="weather_url">https://api.openweathermap.org/data/2.5/</string>
+    <string name="precipitation">Precipitation</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="search_location_to_add_in_the_list">Search Location to add in the list</string>
+    <string name="search_city">Search City</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navgraph"
+    app:startDestination="@id/citiesListFragment">
+
+
+    <fragment
+        android:id="@+id/citiesListFragment"
+        android:name="com.smart.weatherapp.fragments.CitiesListFragment"
+        android:label="fragment_cities_list"
+        tools:layout="@layout/fragment_cities_list" >
+        <action
+            android:id="@+id/action_cityListFragment_to_weatherDetailFragment"
+            app:destination="@id/weatherDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherDetailFragment"
+        android:name="com.smart.weatherapp.fragments.WeatherDetailsFragment"
+        tools:layout="@layout/fragment_weather_details">
+        <argument
+            android:name="cityName"
+            app:argType="string"
+            android:defaultValue="Unknown City"/>
+    </fragment>
+</navigation>
