@@ -10,7 +10,6 @@ class InternetConnectionLiveData(private val context: Context) : LiveData<Boolea
 
     override fun onActive() {
         super.onActive()
-        // Trigger the check for the initial value
         value = isConnected()
     }
 

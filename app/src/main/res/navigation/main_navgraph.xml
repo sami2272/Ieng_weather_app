@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/citiesListFragment"
-        android:name="com.smart.weatherapp.fragments.CitiesListFragment"
+        android:name="com.smart.weatherapp.ui.fragments.CitiesListFragment"
         android:label="fragment_cities_list"
         tools:layout="@layout/fragment_cities_list" >
         <action
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/weatherDetailFragment"
-        android:name="com.smart.weatherapp.fragments.WeatherDetailsFragment"
+        android:name="com.smart.weatherapp.ui.fragments.WeatherDetailsFragment"
         tools:layout="@layout/fragment_weather_details">
         <argument
             android:name="cityName"

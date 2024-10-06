@@ -13,4 +13,8 @@
     <string name="wind_speed">Wind Speed</string>
     <string name="search_location_to_add_in_the_list">Search Location to add in the list</string>
     <string name="search_city">Search City</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="account">Account</string>
+    <string name="alert">Alert</string>
 </resources>

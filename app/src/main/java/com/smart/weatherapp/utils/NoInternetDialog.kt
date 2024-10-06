@@ -10,7 +10,7 @@ class NoInternetDialog(var title :String,var desc:String,private val retryCallba
             .setTitle(title)
             .setMessage(desc)
             .setPositiveButton("Retry") { dialog, _ ->
-                retryCallback() // Call the retry function
+                retryCallback()
                 dialog.dismiss()
             }
             .setNegativeButton("Cancel") { dialog, _ -> dialog.dismiss() }
